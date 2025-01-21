@@ -1,136 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: "Quicksand", serif;
+  font-family: "Quicksand", serif;
 }
 /* header section */
 #header {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .logo-image {
-    width: 62px;
-    height: 62px;
+  width: 62px;
+  height: 62px;
 }
 
 .logo-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .logo-name {
-    font-size: 32px;
-    line-height: 30px;
-    font-weight: 700;
+  font-size: 32px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 /* navbar */
 .navbar {
-    list-style: none;
-    display: flex;
-    gap: 32px;
+  list-style: none;
+  display: flex;
+  gap: 32px;
 }
-
 
 .navbar li a {
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
 }
 .navbar li:first-child {
-    color: #FEA301;
+  color: #fea301;
 }
 
 .navbar li:last-child {
-    color: red;
+  color: red;
 }
 
 .contact-btn button {
-    padding: 10px 30px;
-    background-color: #FEA301;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 600;
-    text-transform: capitalize;
-    cursor: pointer;
+  padding: 10px 30px;
+  background-color: #fea301;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
 .menu-icon {
-    display: none;
+  display: none;
 }
 /* hero section */
 .hero-container {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding-top: 20px;
-    display: flex;
-    gap: 50px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  gap: 50px;
 }
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-content .hero-title {
-    font-size: 56px;
-    line-height: 61px;
-    font-weight: 700;
+  font-size: 56px;
+  line-height: 61px;
+  font-weight: 700;
 }
 
 .hero-title .empower {
-    color: #FEA301;
+  color: #fea301;
 }
 
 .hero-title .toward {
-    color: #01ACFD;
+  color: #01acfd;
 }
 
 .hero-container .hero-description {
-    margin-top:24px;
-    color: #111111;
-    font-size: 20px;
-    font-weight: 400;
+  margin-top: 24px;
+  color: #111111;
+  font-size: 20px;
+  font-weight: 400;
 }
 .hero-image {
-    width: 468px;
+  width: 468px;
 }
 
 .hero-btn button {
-    padding: 10px 47px;
-    margin-top: 32px;
-    background-color: #000000;
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    text-transform: capitalize;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 700;
+  padding: 10px 47px;
+  margin-top: 32px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+/* curriculum section */
+.curriculum {
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 72px;
+}
+.curriculum-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.curriculum-title {
+  font-size: 46px;
+  line-height: 56px;
+  font-weight: 700;
+  text-align: center;
+}
+.curriculum-card-container {
+  padding: 80px 0;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.single-card {
+  width: 367px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(222, 245, 255, 1) -9%,
+    rgba(255, 255, 255, 1) 40%
+  );
+  background-color: #fff;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #def5ff;
+  padding: 52px 26px;
 }
 
+.single-card:nth-child(2) {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 244, 220, 100) -9%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  background-color: #fff;
+  border: 1px solid #fff4dc;
+}
 
+.single-card:last-child {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(238, 225, 255, 100) -9%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  border: 1px solid #f2e8ff;
+  background-color: #fff;
+}
 
+.card-image {
+  width: 136px;
+}
+
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-content {
+    margin-top: 32px;
+}
+.card-content .card-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-content .card-description {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Raleway;
+  color: #808080;
+  text-align: center;
+  margin-top: 32px;
+}
+.card-btn {
+  text-align: center;
+  margin-top: 32px;
+}
+.card-btn button {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #64c8ff;
+  background-color: transparent;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+}
+
+.card-btn .yellow {
+  color: #fea301;
+}
+
+.card-btn .purple {
+    color:#8700FF;
+}
+/* arrow */
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 60px;
+}
+.arrow-left {
+    width: 48px;
+    height: 48px;
+    background-color: #fea301;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.arrow-right {
+    width: 48px;
+    height: 48px;
+    background-color: #fea301;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
