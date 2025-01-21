@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Quicksand", serif;
+}
+/* header section */
+#header {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo-image {
+    width: 62px;
+    height: 62px;
+}
+
+.logo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-name {
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+/* navbar */
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+
+.navbar li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.navbar li:first-child {
+    color: #FEA301;
+}
+
+.navbar li:last-child {
+    color: red;
+}
+
+.contact-btn button {
+    padding: 10px 30px;
+    background-color: #FEA301;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+}
+/* hero section */
+.hero-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    gap: 50px;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content .hero-title {
+    font-size: 56px;
+    line-height: 61px;
+    font-weight: 700;
+}
+
+.hero-title .empower {
+    color: #FEA301;
+}
+
+.hero-title .toward {
+    color: #01ACFD;
+}
+
+.hero-container .hero-description {
+    margin-top:24px;
+    color: #111111;
+    font-size: 20px;
+    font-weight: 400;
+}
+.hero-image {
+    width: 468px;
+}
+
+.hero-btn button {
+    padding: 10px 47px;
+    margin-top: 32px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+
+
