@@ -8,9 +8,6 @@
     line-height: 61px;
     font-weight: 700;
   }
-  .hero-image {
-    width: 400px;
-  }
   .curriculum-card-container {
     padding: 40px 16px;
     gap: 12px;
@@ -43,6 +40,21 @@
   }
   .badge .green-bg {
     bottom: 17% !important;
+  }
+  /* footer */
+  .footer-container {
+    padding: 45px 20px;
+    max-width: 1070px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer-nav-social-icon-container {
+    flex-grow: 1;
+    display: flex;
+    gap: 100px;
+    align-content: center;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -116,6 +128,20 @@
   }
   .story-image-4 img {
     width: 100%;
+  }
+  /* footer */
+  .footer {
+    padding: 0 16px;
+  }
+  .footer-container {
+    padding: 55px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+  .footer-nav-social-icon-container {
+    flex-direction: column;
+    gap: 24px;
   }
 }
 
