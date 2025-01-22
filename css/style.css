@@ -47,7 +47,6 @@ body {
   display: flex;
   gap: 32px;
 }
-
 .navbar li a {
   text-decoration: none;
   text-transform: capitalize;
@@ -55,12 +54,17 @@ body {
   font-weight: 700;
   line-height: 30px;
 }
-.navbar li:first-child {
+.navbar li a.home {
   color: #fea301;
 }
-
-.navbar li:last-child {
-  color: red;
+.navbar li a.about {
+  color: #01ACFD;
+}
+.navbar li a.facilities {
+  color: #05D4DF;
+}
+.navbar li a.admission {
+  color: #5D58EF;
 }
 .btn-container {
   display: flex;
