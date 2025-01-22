@@ -8,6 +8,14 @@
 body {
   font-family: "Quicksand", serif;
 }
+/* marquee */
+.marquee {
+  position: absolute;
+  top: 80px;
+  font-size: 41px;
+  color: #000;
+  font-weight: 500;
+}
 /* header section */
 #header {
   max-width: 1160px;
@@ -16,6 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo-container {
@@ -58,13 +67,13 @@ body {
   color: #fea301;
 }
 .navbar li a.about {
-  color: #01ACFD;
+  color: #01acfd;
 }
 .navbar li a.facilities {
-  color: #05D4DF;
+  color: #05d4df;
 }
 .navbar li a.admission {
-  color: #5D58EF;
+  color: #5d58ef;
 }
 .btn-container {
   display: flex;
