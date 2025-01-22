@@ -238,13 +238,14 @@ body {
   text-align: center;
   margin-top: 32px;
 }
-.card-btn button {
+.card-btn a {
   font-size: 16px;
   line-height: 28px;
   font-weight: 700;
   color: #64c8ff;
   background-color: transparent;
   text-transform: capitalize;
+  text-decoration: none;
   border: none;
   cursor: pointer;
 }
