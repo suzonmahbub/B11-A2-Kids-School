@@ -302,13 +302,11 @@ body {
   text-align: center;
   text-transform: capitalize;
 }
-
 .stories-container {
   max-width: 1160px;
   margin: 0 auto;
   padding: 80px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 18px;
 }
 .one-story-content {
@@ -317,6 +315,8 @@ body {
   overflow: hidden;
   position: relative;
   z-index: 1;
+  flex-shrink: 0;
+  max-width: 540px;
 }
 
 .story-image img {
@@ -395,16 +395,15 @@ body {
 .story-image img {
   width: 100%;
 }
-.story-image-1,
-.story-image-2,
-.story-image-3,
-.story-image-4 {
-    width: 290px;
-    height: 180px;
+.story-image-1 img{
+  width: 100%;
 }
-.story-image-1,
-.story-image-2,
-.story-image-3,
+.story-image-2 img {
+  width: 100%;
+}
+.story-image-3 img {
+  width: 100%;
+}
 .story-image-4 img {
   width: 100%;
 }
